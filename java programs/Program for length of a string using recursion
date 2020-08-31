@@ -1,20 +1,23 @@
-import java.util.*; 
+public class len {
 
-public class example{ 
+	public static void main(String[] args) {
+      String str="chandan kumar";
+      str=str+":";
+      int i=-1;
+      System.out.println(srl(str.toCharArray(),++i));
+	}
 
-	private static int Len(String str) 
-	{ 
-		if (str.equals("")) 
-			return 0; 
-		else
-			return Len(str.substring(1)) + 1; 
-	} 
 
-	public static void main(String[] args) 
-	{ 
-
-		
-		String str ="chandan kumar"; 
-		System.out.println(Len(str)); 
-	} 
-} 
+public static int srl(char[] str,int i)
+{
+	int c=0;
+	if(str[i]==':')
+	{
+		return i;
+	}
+	else
+	{
+		return srl(str,i=i+1);
+	}
+}
+}
