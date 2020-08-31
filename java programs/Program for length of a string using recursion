@@ -1,0 +1,20 @@
+import java.util.*; 
+
+public class example{ 
+
+	private static int Len(String str) 
+	{ 
+		if (str.equals("")) 
+			return 0; 
+		else
+			return Len(str.substring(1)) + 1; 
+	} 
+
+	public static void main(String[] args) 
+	{ 
+
+		
+		String str ="chandan kumar"; 
+		System.out.println(Len(str)); 
+	} 
+} 
